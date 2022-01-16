@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@900&display=swap");
+
+*,
+*::after,
+*::before {
+  /* внутренний отступ */
+  padding: 0;
+  /* внешний отступ */
+  margin: 0;
+  /* рамка */
+  border: 0;
+  /* размер блока равен внешнему отступу + остальное */
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(199, 198, 198);
+  background: rgb(189, 157, 63);
+  background: linear-gradient(
+    171deg,
+    rgba(189, 157, 63, 1) 0%,
+    rgba(85, 196, 45, 1) 50%,
+    rgba(255, 0, 144, 0.38340643274853803) 100%
+  );
+  font-size: 18px;
+  /* background-image: url("img/772-7722783_power-button-png-removebg-preview.png"); */
+  /* background-repeat: no-repeat;
+  background-size: 120px;
+  background-position: 5% 150px;
+  background-attachment: fixed; */
+  scroll-behavior: smooth;
+}
+div {
+  /* width: 100%; */
+  /* height: auto; */
+  background-color: white;
+  margin: 25px;
+  padding: 30px;
+}
+
+.wrapper {
+  max-width: 850px;
+  /* height: auto; */
+  background-color: rgb(17, 199, 108);
+  padding: 0;
+  margin: 15px auto 25px auto;
+
+  /* за пределы блока ничего не должно выходить */
+  overflow: hidden;
+}
+
+div img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover; /* Вписываем фотографию в область */
+}
+
+.wrapper div p {
+  margin: 15px 0;
+  text-indent: 10px; /* красная строка */
+  line-height: 28px;
+  text-align: left;
+}
+
+.wrapper div h1,
+.wrapper div h2 {
+  margin: 25px 0;
+  /* text-align: center; */
+  font-size: 40px;
+  font-family: "Alumni Sans", sans-serif;
+}
+
+.wrapper div {
+  text-align: center;
+}
+.wrapper div button {
+  background-color: rgba(18, 156, 48, 0.774);
+  padding: 25px;
+  border-radius: 15px;
+  font-size: 40px;
+  font-family: "Alumni Sans", sans-serif;
+  color: rgb(245, 235, 235);
+  cursor: pointer;
+  transition: 0.5s; /* анимация простейшая */
+}
+
+.wrapper div button:hover {
+  background-color: rgba(18, 20, 156, 0.774);
+  border-radius: 5px;
+}
+
+/* -------- меню сайта ------------- */
+
+.menuTop,
+.menuFooter {
+  background-color: #444;
+  /* line-height: 150px; */
+  display: flex;
+}
+
+.logo {
+  width: 120px;
+  margin: 15px;
+}
+
+.linkLogo {
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 25px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 40px;
+  font-family: "Alumni Sans", sans-serif;
+  text-decoration: none;
+  transition: 1s; /* анимация простейшая */
+}
+
+nav ul li a:hover {
+  color: red;
+  border-bottom: 10px solid red;
+}
+
+.art1 {
+  background-image: url("img/fon/Screenshot_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.art2 {
+  background-image: url("img/fon/Screenshot_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.art3 {
+  background-image: url("img/fon/Screenshot_3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.art4 {
+  background-image: url("img/fon/Screenshot_4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.art5 {
+  background-image: url("img/fon/Screenshot_5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+footer {
+  background-color: #555;
+  text-align: center;
+  color: #ababab;
+}
+
+footer a {
+  color: #ababab;
+  display: inline-block;
+  margin: 25px;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: #fff;
+}
